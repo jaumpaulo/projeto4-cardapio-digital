@@ -10,6 +10,7 @@ let pedido1 = parseInt(prompt(`
 (5) Sair
 ========================
 `))
+
 if (pedido1 === 5) {
     alert("Até mais!")
 } else {
@@ -33,6 +34,7 @@ if (pedido1 === 5) {
         default:
             errado = true
     }
+
     if (errado !== true) {
         let pedido2 = parseInt(prompt(`
 ==========MENU==========
@@ -43,6 +45,7 @@ if (pedido1 === 5) {
 (5) Sair
 ========================           
 `))
+
         if (pedido2 === 5) {
             alert("Volte sempre!")
         } else {
@@ -66,6 +69,7 @@ if (pedido1 === 5) {
                 default:
                     errado = true
             }
+
             if (errado !== true) {
                 let pedido3 = parseInt(prompt(`
 ==========MENU==========
@@ -76,6 +80,7 @@ if (pedido1 === 5) {
 (5) Sair
 ========================                
 `))
+
                 if (pedido3 === 5) {
                     alert("Volte sempre!")
                 } else {
@@ -99,10 +104,11 @@ if (pedido1 === 5) {
                         default:
                             errado = true
                     }
+
                     if (errado !== true) {
                         let estudante = prompt("Você é estudante? [S/N]").toLowerCase()
                         let valorTotal = valor1 + valor2 + valor3
-                        let cinquenta = parseFloat(50)
+                        let cinquenta = 50
                         let descontoDoEstudante = valorTotal * 10 / 100
                         let descontoDe5 = valorTotal * 5 / 100
 
@@ -147,7 +153,7 @@ Total sem desconto: R$${valorTotal.toFixed(2)}
 `)
                         }
                     } else {
-                        alert("Esse pruduto não está no menu. Programa encerrado")
+                        alert("Esse produto não está no menu. Programa encerrado")
                     }
                 }
             } else {
